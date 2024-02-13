@@ -1,9 +1,12 @@
 package com.arya.abstraction.arithmaticoperation;
 
-public class AbstractArithmaticOperation {
+public abstract class AbstractArithmaticOperation {
+
+	//abstract method
+	public abstract int add();
 	
-   
-ff
-   
-   
+	//concrete method
+	public void printHello() {
+		System.out.println("Hello");
+	}
 }

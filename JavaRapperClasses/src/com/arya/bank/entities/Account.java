@@ -1,15 +1,16 @@
 package com.arya.bank.entities;
 
 public class Account implements Valid{
-	
+
 	private int accountNo;
-   private	String name;
-	private float balance;
-	public Account(int accountNo, String name, float balance) {
-		super();
+	private String name;
+	private float balace;
+	public Account() {
+	}
+	public Account(int accountNo, String name, float balace) {
 		this.accountNo = accountNo;
 		this.name = name;
-		this.balance = balance;
+		this.balace = balace;
 	}
 	public int getAccountNo() {
 		return accountNo;
@@ -23,17 +24,14 @@ public class Account implements Valid{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public float getBalance() {
-		return balance;
+	public float getBalace() {
+		return balace;
 	}
-	public void setBalance(float balance) {
-		this.balance = balance;
+	public void setBalace(float balace) {
+		this.balace = balace;
 	}
-	public Account() {
-		super();
-		// TODO Auto-generated constructor stu
+	@Override
+	public String toString() {
+		return "Account [accountNo=" + accountNo + ", name=" + name + ", balace=" + balace + "]";
 	}
-	
-	
-
 }
